@@ -1,0 +1,44 @@
+\chapter{Quantum Statistical Mechanics}
+
+\section{Introduction}
+This chapter discusses Quantum Statistical Mechanics. Modular theory generalizes the concept of temperature to quantum systems through Kubo-Martin-Schwinger (KMS) states.
+
+\section{Density Operator}
+The density operator $\rho$ describes the statistical state of a quantum system in a finite volume $V$. It is a positive operator with unit trace serving as the quantum analogue of the phase space probability distribution.
+\begin{equation}
+    \rho \ge 0, \quad \text{Tr}(\rho) = 1
+\end{equation}
+
+\section{States}
+A state $\omega$ is defined as a positive linear functional on the algebra of observables $\mathcal{A}$. For a system described by a density matrix $\rho$, the expectation value of an observable $A$ is given by:
+\begin{equation}
+    \omega(A) = \text{Tr}(\rho A)
+\end{equation}
+
+\section{Type II - von Neumann Algebra}
+Type II von Neumann algebras arise in the thermodynamic limit or when considering systems at infinite temperature. They possess a trace but do not have minimal projections (Type II$_1$) or are isomorphic to the tensor product of a Type II$_1$ factor and $\mathcal{B}(\mathcal{H})$ (Type II$_\infty$).
+
+\section{Partition Function}
+The partition function $Z$ quantifies the statistical properties of a system in the canonical ensemble at inverse temperature $\beta$:
+\begin{equation}
+    Z(\beta) = \text{Tr}(e^{-\beta H})
+\end{equation}
+where $H$ is the Hamiltonian of the system.
+
+\section{Thermodynamic Limit}
+The thermodynamic limit is defined as the limit where the volume $V \to \infty$ while the particle density $N/V$ remains constant. In this limit, the Hilbert space representation allows for unitarily inequivalent representations of the canonical commutation relations.
+
+\section{Kubo-Martin-Schwinger (KMS) Condition}
+The KMS condition characterizes equilibrium states at inverse temperature $\beta$ without relying on the trace operation, which may not be well-defined in the thermodynamic limit.
+
+A state $\omega$ satisfies the KMS condition with respect to the time evolution automorphisms $\alpha_t$ if for any $A, B \in \mathcal{A}$, there exists a function $F(z)$ analytic in the strip $0 < \text{Im } z < \beta$ such that:
+\begin{equation}
+    F(t) = \omega(A \alpha_t(B)), \quad F(t + i\beta) = \omega(\alpha_t(B) A)
+\end{equation}
+
+The general form of the KMS condition for a quantum system is described by:
+\begin{itemize}
+    \item A von Neumann algebra $M$ of observables
+    \item A one-parameter group of automorphisms $\alpha_t$ (time evolution)
+    \item A state $\omega$ on $M$ (positive normalized linear functional) satisfying the analyticity condition above.
+\end{itemize}

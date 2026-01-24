@@ -1,0 +1,41 @@
+\chapter{Algebraic Quantum Field Theory}
+
+\section{Introduction}
+This chapter covers Algebraic Quantum Field Theory (AQFT).
+
+\section{Modular Hamiltonian}
+For a given density matrix $\rho$, the modular Hamiltonian $K$ is defined through the relationship:
+\begin{equation}
+    \rho = \frac{e^{-K}}{\text{Tr } e^{-K}}
+\end{equation}
+This expression resembles a thermal density matrix, where $K$ is analogous to a Hamiltonian, and the "temperature" is effectively set to 1.
+
+\section{Axioms}
+An algebraic quantum field theory is defined via a net of von Neumann algebras $\mathcal{A}(\mathcal{O})$ associated with open regions $\mathcal{O}$ in Minkowski spacetime, acting on a Hilbert space $\mathcal{H}$. These algebras satisfy the following axioms:
+
+\subsection{Isotony}
+The net of algebras preserves the inclusion relation of spacetime regions. If $\mathcal{O}_1 \subset \mathcal{O}_2$, then the corresponding algebras are nested:
+\begin{equation}
+    \mathcal{A}(\mathcal{O}_1) \subset \mathcal{A}(\mathcal{O}_2)
+\end{equation}
+
+\subsection{Locality (Einstein Causality)}
+Observables in spacelike separated regions commute. If $\mathcal{O}_1$ and $\mathcal{O}_2$ are spacelike separated, then for all $A \in \mathcal{A}(\mathcal{O}_1)$ and $B \in \mathcal{A}(\mathcal{O}_2)$:
+\begin{equation}
+    [A, B] = 0
+\end{equation}
+
+\subsection{Poincaré Covariance}
+There exists a strongly continuous unitary representation $U(\Lambda, a)$ of the Poincaré group $\mathcal{P}_+^\uparrow$ on $\mathcal{H}$ such that the net of observables transforms covariantly:
+\begin{equation}
+    U(\Lambda, a) \mathcal{A}(\mathcal{O}) U(\Lambda, a)^{-1} = \mathcal{A}(\Lambda \mathcal{O} + a)
+\end{equation}
+
+\subsection{Vacuum}
+There exists a unique unit vector $\Omega \in \mathcal{H}$ (the vacuum state) which is invariant under the Poincaré translations $U(1, a)$:
+\begin{equation}
+    U(1, a) \Omega = \Omega
+\end{equation}
+
+\subsection{Spectrum Condition}
+The spectrum of the energy-momentum generators $P_\mu$, derived from the translation subgroup, is confined to the closed forward light cone $\bar{V}_+$.

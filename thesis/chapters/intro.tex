@@ -1,5 +1,22 @@
-\section{Motivation}
-Von Neumann algebras have become increasingly relevant in quantum field theory and quantum information theory.
+\section{Overview}
+The interplay between mathematics and physics has always been a driving force in the advancement of scientific understanding. Roughly a century ago, the formulation of quantum mechanics necessitated a new mathematical language, leading to the adoption of Hilbert spaces and linear operators as the standard formalism. Central to this development was the work of John von Neumann, whose contributions laid the groundwork for what are now known as von Neumann algebras. These algebraic structures provide a rigorous framework for studying infinite-dimensional quantum systems, where the subtleties of the thermodynamic limit and the local structure of spacetime cannot be ignored.
 
-\section{Methodology}
-We will analyze collider data using high-performance computing resources, specifically Google TPUs.
+This thesis investigates the application of von Neumann algebras in contemporary physics, bridging the gap between abstract mathematical theory and concrete physical phenomena. We explore how these algebras elucidate the structure of quantum statistical mechanics, algebraic quantum field theory, and even the detection of gravitational waves. By leveraging modern computational resources, specifically Google's Tensor Processing Units (TPUs), we also aim to bridge the gap between theoretical predictions and experimental verification.
+
+\section{Motivation}
+In standard quantum mechanics, the uniqueness of the representation of the canonical commutation relations (Stone-von Neumann theorem) simplifies the analysis considerably. However, in Quantum Field Theory (QFT) and the thermodynamic limit of statistical mechanics, this uniqueness is lost. We are faced with a multitude of unitarily inequivalent representations, a feature that was once considered a pathology but is now understood to be a rich source of physical phenomena, such as phase transitions and spontaneous symmetry breaking.
+
+Von Neumann algebras, specifically the classification of factors into Type I, Type II, and Type III, provide the necessary tools to navigate this landscape. Type III factors, in particular, are ubiquitous in local quantum physics and characterize the local algebras of observables in QFT. Understanding the modular theory of these algebras allows us to generalize the concept of equilibrium states and temperature to a relativistic setting, connecting the KMS condition to the intrinsic dynamical properties of the algebra itself.
+
+\section{Thesis Outline}
+This thesis is structured into four main parts, each addressing a specific domain where operator algebras play a pivotal role:
+
+\begin{itemize}
+    \item \textbf{Chapter 2: Quantum Mechanics.} We revisit the foundational aspects of quantum mechanics, introducing the mathematical formalism of Hilbert spaces and operators. We discuss the postulates of the theory and the initial classification of von Neumann algebras relevant to non-relativistic systems.
+    
+    \item \textbf{Chapter 3: Quantum Statistical Mechanics.} This chapter extends the discussion to infinite systems. We introduce the thermodynamic limit, the density operator formalism, and the crucial role of the Kubo-Martin-Schwinger (KMS) condition in defining equilibrium states for Type II and Type III algebras.
+    
+    \item \textbf{Chapter 4: Algebraic Quantum Field Theory (AQFT).} Here, we apply the algebraic approach to relativistic field theory. We discuss the net of local observables, the axioms of AQFT, and the significance of the vacuum sector in the context of Type III factors.
+    
+    \item \textbf{Chapter 5: Gravitational Waves.} Finally, we explore a contemporary application, investigating how the precise measurement techniques required for gravitational wave detection can be understood and optimized through the lens of quantum measurement theory and operator algebras.
+\end{itemize}
